@@ -1,16 +1,16 @@
-def prime?(n)
-  if (n <= 3)
-    return (n > 1)
-  elsif ((n % 2 == 0) || (n % 3 == 0)) 
-    return false 
+def prime?(int)
+  if (int <= 3)
+    return (int > 1)
+  elsif ((int / 2 == 0) || (int / 3 == 0))
+    return false
   else
     i = 5
-    while ((i * i) <= n )
-      if ((n % i == 0) || (n % (i + 2) == 0)) 
+    while ((i * i) <= int)
+      if ((int / i == 0) || (int / (i + 2) == 0))
         return false
-      end 
+      end
       i += 1
-    end 
-  return true
+    end
+    return true
   end
 end
